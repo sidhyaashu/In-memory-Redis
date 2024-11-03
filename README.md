@@ -37,3 +37,45 @@ redis-cli
 root@20db07972e42:/# redis-cli
 127.0.0.1:6379>
 ```
+
+## To IO with redis install npm package:
+
+```bash
+npm i ioredis
+```
+
+
+## WORKFLOW
+
+```plaintext
+ Client
+    |
+    |          Request
+    |
+    V
+ Server
+    |
+    |--------- Check Cache ---------
+    |                               |
+    |                           Cache Hit?
+    |                               |
+    |              YES              |           NO
+    |                               |
+    |                               |
+    |                           Get Data from Redis
+    |                               |
+    |                               |
+    |                       Cache Result to Server
+    |                               |
+    |                               |
+    |<----------- Response ---------|
+    |
+    V
+  Client (Receives Data)
+
+```
+
+
+
+## RESOURCES
+1. **datatypes** - https://redis.io/docs/latest/develop/data-types

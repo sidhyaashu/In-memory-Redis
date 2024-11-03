@@ -1,0 +1,16 @@
+{
+  "name": "in-memory-redis",
+  "version": "1.0.0",
+  "description": "Perform in memory operation using redis on docker",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ioredis": "^5.4.1"
+  }
+}
