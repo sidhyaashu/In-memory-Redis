@@ -5,12 +5,16 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev":"nodemon server.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "ioredis": "^5.4.1"
+    "axios": "^1.7.7",
+    "express": "^4.21.1",
+    "ioredis": "^5.4.1",
+    "nodemon": "^3.1.7"
   }
 }
